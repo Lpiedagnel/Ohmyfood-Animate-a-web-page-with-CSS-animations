@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood-animate-a-web-page-with-css-animations",
+  "version": "1.0.0",
+  "description": "This is a student project for OpenClassrooms. The goal is to use CSS animations to match (as close as possible) the mockup we are given.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lpiedagnel/Ohmyfood-Animate-a-web-page-with-CSS-animations.git"
+  },
+  "author": "Lucas Piedagnel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lpiedagnel/Ohmyfood-Animate-a-web-page-with-CSS-animations/issues"
+  },
+  "homepage": "https://github.com/Lpiedagnel/Ohmyfood-Animate-a-web-page-with-CSS-animations#readme"
+}

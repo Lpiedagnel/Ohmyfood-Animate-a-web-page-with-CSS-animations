@@ -341,22 +341,44 @@ template {
   display: none;
 }
 
-body {
+html {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 /* Import Font Style */
 body {
-  font-style: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
   display: flex;
   justify-content: center;
-  padding: 1.5em 0 0.4em;
-  box-shadow: 0px 0px 4px #424242;
+  padding: 1.5em 0 0.5em;
+  box-shadow: 2px 1px 5px #aaaaaa;
+  position: relative;
+}
+
+.search-form {
+  width: 100%;
+  background-color: #aaaaaa;
+}
+.search-form__input {
+  width: 100%;
+  text-align: center;
+  border: none;
+  background-color: #EAEAEA;
+  padding: 1em 0;
+  font-weight: 500;
+}
+.search-form__input::placeholder {
+  opacity: 1;
+  color: #353535;
 }
 
 /*# sourceMappingURL=style.css.map */

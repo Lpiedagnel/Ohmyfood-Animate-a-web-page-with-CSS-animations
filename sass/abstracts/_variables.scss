@@ -4,11 +4,13 @@ $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 
-$white: #FFF;
+$white: #EAEAEA;
 $dark: #353535;
 
 $lighten: 5;
 $darken: 25;
+
+$lighten-more: 20;
 
 
 $colors: (
@@ -31,6 +33,11 @@ $colors: (
         base: $dark,
         light: lighten($dark, $lighten),
         dark: darken($dark, $darken),
+    ),
+    light: (
+        base: $white,
+        light: lighten($white, $lighten),
+        dark: darken($white, $darken),
     )
 );
 

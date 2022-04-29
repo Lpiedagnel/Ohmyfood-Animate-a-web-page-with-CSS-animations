@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Lpiedagnel/Ohmyfood-Animate-a-web-page-with-CSS-animations/issues"
   },
-  "homepage": "https://github.com/Lpiedagnel/Ohmyfood-Animate-a-web-page-with-CSS-animations#readme"
+  "homepage": "https://github.com/Lpiedagnel/Ohmyfood-Animate-a-web-page-with-CSS-animations#readme",
+  "dependencies": {
+    "sass": "^1.51.0"
+  }
 }

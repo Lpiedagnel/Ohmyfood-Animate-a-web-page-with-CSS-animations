@@ -1,0 +1,15 @@
+.btn {
+    background: linear-gradient(clr(secondary), clr(primary));
+    color: clr(light);
+    font-weight: 500;
+    border: none;
+    border-radius: 2rem;
+    max-width: 400px;
+    padding: 1em;
+    box-shadow: 2px 1px 5px clr(light, dark);
+
+    &:hover {
+        cursor: pointer;
+        background: linear-gradient(clr(secondary, light), clr(primary, light));
+    }
+}

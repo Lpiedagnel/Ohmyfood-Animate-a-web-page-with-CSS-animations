@@ -1,0 +1,22 @@
+.cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: clr(light, light);
+    padding: 2.5em 3em 2.5em;
+}
+
+.cta__title {
+    font-size: 1.7rem;
+    margin: 0;
+}
+
+.cta__concept {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.cta__btn {
+    margin: 1em;
+}

@@ -4,8 +4,12 @@ $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 
-$white: #EAEAEA;
+$light: #EAEAEA;
 $dark: #353535;
+
+$low: 5;
+$medium: 15;
+$high: 25;
 
 $lighten: 5;
 $darken: 25;
@@ -13,28 +17,48 @@ $darken: 25;
 $colors: (
     primary: (
         base: $primary-color,
-        light: lighten($primary-color, $lighten),
-        dark: darken($primary-color, $darken),
+        low-light: lighten($primary-color, $low),
+        light: lighten($primary-color, $medium),
+        high-light: lighten($primary-color, $high),
+        low-dark: darken($primary-color, $low),
+        dark: darken($primary-color, $medium),
+        high-dark: darken($primary-color, $high),
     ),
     secondary: (
         base: $secondary-color,
-        light: lighten($secondary-color, $lighten),
-        dark: darken($secondary-color, $darken),
+        low-light: lighten($secondary-color, $low),
+        light: lighten($secondary-color, $medium),
+        high-light: lighten($secondary-color, $high),
+        low-dark: darken($secondary-color, $low),
+        dark: darken($secondary-color, $medium),
+        high-dark: darken($secondary-color, $high),
     ),
     tertiary: (
         base: $tertiary-color,
-        light: lighten($tertiary-color, $lighten),
-        dark: darken($tertiary-color, $darken),
+        low-light: lighten($tertiary-color, $low),
+        light: lighten($tertiary-color, $medium),
+        high-light: lighten($tertiary-color, $high),
+        low-dark: darken($tertiary-color, $low),
+        dark: darken($tertiary-color, $medium),
+        high-dark: darken($tertiary-color, $high),
     ),
     dark: (
         base: $dark,
-        light: lighten($dark, $lighten),
-        dark: darken($dark, $darken),
+        low-light: lighten($dark, $low),
+        light: lighten($dark, $medium),
+        high-light: lighten($dark, $high),
+        low-dark: darken($dark, $low),
+        dark: darken($dark, $medium),
+        high-dark: darken($dark, $high),
     ),
     light: (
-        base: $white,
-        light: lighten($white, $lighten),
-        dark: darken($white, $darken),
+        base: $light,
+        low-light: lighten($light, $low),
+        light: lighten($light, $medium),
+        high-light: lighten($light, $high),
+        low-dark: darken($light, $low),
+        dark: darken($light, $medium),
+        high-dark: darken($light, $high),
     )
 );
 

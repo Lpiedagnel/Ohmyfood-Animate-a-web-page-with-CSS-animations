@@ -454,9 +454,10 @@ header {
   align-items: center;
   width: 100%;
   background-color: #f7f7f7;
+  border: none;
   border-radius: 1em;
   padding: 0.5rem;
-  box-shadow: 2px 1px 5px #aaaaaa;
+  box-shadow: 2px 1px 12px #dddddd;
 }
 .operating__icon {
   color: #aaaaaa;

@@ -27,14 +27,15 @@
         display: flex;
         align-items: center;
         width: 100%;
-        background-color: clr(light, light);
+        background-color: clr(light, low-light);
+        border: none;
         border-radius: 1em;
         padding: 0.5rem;
-        @include box-shadow;
+        box-shadow: 2px 1px 12px clr(light, low-dark);
     }
 
     &__icon {
-        color: clr(light, dark);
+        color: clr(light, high-dark);
         font-size: 1.2em;
         margin: 0 1.2em;
     }

@@ -1,0 +1,46 @@
+/* OPERATING STEP */
+
+.operating {
+    &__step {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 1em 0;
+    }
+
+    &__number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: clr(primary);
+        padding: 13px;
+        color: clr(light);
+        height: 15px;
+        width: 15px;
+        font-size: 0.8em;
+        border-radius: 50%;
+        position: relative;
+        left: 10px;
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-color: clr(light, light);
+        border-radius: 1em;
+        padding: 0.5rem;
+        @include box-shadow;
+    }
+
+    &__icon {
+        color: clr(light, dark);
+        font-size: 1.2em;
+        margin: 0 1.2em;
+    }
+
+    &__text {
+        font-weight: 500;
+    }
+
+}

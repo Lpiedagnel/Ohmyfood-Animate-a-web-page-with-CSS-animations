@@ -6,7 +6,7 @@
     border-radius: 2rem;
     max-width: 400px;
     padding: 1em;
-    box-shadow: 2px 1px 5px clr(light, dark);
+    @include box-shadow;
 
     &:hover {
         cursor: pointer;

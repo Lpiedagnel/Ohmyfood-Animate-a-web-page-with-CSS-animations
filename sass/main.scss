@@ -20,13 +20,15 @@
     'layout/header',
     'layout/cta',
     'layout/footer',
-    'layout/flexbox';
+    'layout/flexbox',
+    'layout/operating';
 
 // 5. Components
 @import 
     'components/buttons',
     'components/media',
-    'components/search';
+    'components/search',
+    'components/operating_step';
 
 // 6. Page-specific styles
 @import 

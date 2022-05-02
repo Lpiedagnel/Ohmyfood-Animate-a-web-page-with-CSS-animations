@@ -21,14 +21,16 @@
     'layout/cta',
     'layout/footer',
     'layout/flexbox',
-    'layout/operating';
+    'layout/operating',
+    'layout/restaurant';
 
 // 5. Components
 @import 
     'components/buttons',
     'components/media',
     'components/search',
-    'components/operating_step';
+    'components/operating_step',
+    'components/restaurant-card';
 
 // 6. Page-specific styles
 @import 

@@ -1,0 +1,10 @@
+/* RESTAURANT */
+
+.restaurant {
+    background-color: clr(light, low-light);
+    padding: $little-padding;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

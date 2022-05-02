@@ -1,0 +1,66 @@
+.restaurant {
+    &__card {
+        background-color: clr(light, high-light);
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+        min-width: 250px;
+        max-width: 320px;
+        border-radius: 1em;
+        @include box-shadow;
+    }
+
+    &__header {
+        margin: 0;
+        height: 175px;
+    }
+
+    &__img {
+        width: 100%;
+        height: 175px;
+        object-fit: cover;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+    }
+
+    &__news {
+        background-color: clr(tertiary);
+        color: clr(tertiary, high-dark);
+        font-weight: 500;
+        font-size: 0.9rem;
+        display: inline;
+        padding: 0.4rem;
+        border-radius: 2px;
+        position: relative;
+        float: right;
+        bottom: 90%;
+        margin-right: 3%;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    &__name {
+        margin: 0;
+    }
+
+    &__localization {
+        margin: 0;
+        font-weight: 300;
+    }
+
+    &__like {
+        font-size: 1.5em;
+    }
+}

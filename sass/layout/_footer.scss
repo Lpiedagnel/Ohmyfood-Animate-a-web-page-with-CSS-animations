@@ -1,0 +1,31 @@
+/* FOOTER */
+
+.footer {
+    background-color: clr(dark);
+    padding: $little-padding;
+}
+
+.footer__logo {
+    filter: invert(100%);
+    width: 7em;
+}
+
+.footer__list {
+    list-style: none;
+    list-style-position: outside;
+    padding: 0;
+}
+
+.footer__item {
+    margin-bottom: 0.5rem;
+}
+
+.footer__icon {
+    width: 15px;
+    margin-right: 0.3em;
+}
+
+.footer__link {
+    color: clr(light, light);
+    text-decoration: none;
+}

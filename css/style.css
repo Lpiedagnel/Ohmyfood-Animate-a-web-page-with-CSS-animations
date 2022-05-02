@@ -389,6 +389,37 @@ header {
   margin: 1em;
 }
 
+/* FOOTER */
+.footer {
+  background-color: #353535;
+  padding: 1.5em 1.5em 0.5em;
+}
+
+.footer__logo {
+  filter: invert(100%);
+  width: 7em;
+}
+
+.footer__list {
+  list-style: none;
+  list-style-position: outside;
+  padding: 0;
+}
+
+.footer__item {
+  margin-bottom: 0.5rem;
+}
+
+.footer__icon {
+  width: 15px;
+  margin-right: 0.3em;
+}
+
+.footer__link {
+  color: white;
+  text-decoration: none;
+}
+
 /* OPERATING SECTION */
 .operating {
   display: flex;
@@ -399,7 +430,7 @@ header {
 /* RESTAURANT */
 .restaurant {
   background-color: #f7f7f7;
-  padding: 1.5em 1.5em 0.5em;
+  padding: 1.5em 1.5em 3.5em;
 }
 .restaurant__container {
   display: flex;

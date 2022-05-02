@@ -1,13 +1,18 @@
 .restaurant {
     &__card {
         background-color: clr(light, high-light);
-        display: flex;
-        flex-direction: column;
         height: 250px;
         min-width: 250px;
-        max-width: 320px;
-        border-radius: 1em;
+        width: 100%;
+        border-radius: 1em;        
         @include box-shadow;
+    }
+
+    &__link {
+        color: clr(dark, dark);
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
     }
 
     &__header {

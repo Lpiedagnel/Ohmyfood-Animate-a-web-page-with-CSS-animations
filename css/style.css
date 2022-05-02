@@ -400,10 +400,11 @@ header {
 .restaurant {
   background-color: #f7f7f7;
   padding: 1.5em 1.5em 0.5em;
+}
+.restaurant__container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  gap: 1rem;
 }
 
 .btn {
@@ -480,13 +481,17 @@ header {
 
 .restaurant__card {
   background-color: white;
-  display: flex;
-  flex-direction: column;
   height: 250px;
   min-width: 250px;
-  max-width: 320px;
+  width: 100%;
   border-radius: 1em;
   box-shadow: 2px 1px 5px #aaaaaa;
+}
+.restaurant__link {
+  color: #0f0f0f;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
 }
 .restaurant__header {
   margin: 0;

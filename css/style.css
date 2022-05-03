@@ -505,6 +505,14 @@ header {
   border-radius: 1em;
   padding: 0.5rem;
   box-shadow: 5px 10px 10px #e8e8e8;
+  transition: 200ms;
+}
+.operating__card:hover {
+  background-color: #f2eafb;
+  cursor: pointer;
+}
+.operating__card:hover > .operating__icon {
+  color: #9356DC;
 }
 .operating__icon {
   color: #828282;

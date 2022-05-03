@@ -32,10 +32,21 @@
         border-radius: 1em;
         padding: 0.5rem;
         box-shadow: 5px 10px 10px lighten($dark, 70% );
+        transition: 200ms;
+
+        &:hover {
+            background-color: lighten($primary-color, 35%);
+            cursor: pointer;
+
+            & > .operating__icon {
+                color: $primary-color
+            }
+        }
+
     }
 
     &__icon {
-        color: lighten($dark, 30% );;
+        color: lighten($dark, 30% );
         font-size: 1.2em;
         margin: 0 1.2em;
     }

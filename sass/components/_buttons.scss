@@ -7,9 +7,11 @@
     max-width: 400px;
     padding: 1em;
     box-shadow: 3px 3px 10px lighten($dark, 50% );
+    transition: 400ms;
 
     &:hover {
         cursor: pointer;
-        background: linear-gradient(clr(secondary, light), clr(primary, light));
+        opacity: 0.5;
+        box-shadow: 3px 3px 10px $dark;
     }
 }

@@ -7,5 +7,5 @@ header {
     justify-content: center;
     padding: $little-padding;
     position: relative;
-    @include box-shadow;
+    box-shadow: 0px 2px 5px lighten($dark, 60% );
 }

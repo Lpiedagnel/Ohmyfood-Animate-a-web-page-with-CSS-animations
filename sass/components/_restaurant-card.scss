@@ -1,15 +1,15 @@
 .restaurant {
     &__card {
-        background-color: clr(light, high-light);
+        background-color: $light;
         height: 250px;
         min-width: 250px;
         width: 100%;
         border-radius: 1em;        
-        @include box-shadow;
+        box-shadow: 3px 3px 10px lighten($dark, 64%);
     }
 
     &__link {
-        color: clr(dark, dark);
+        color: $dark;
         text-decoration: none;
         display: flex;
         flex-direction: column;
@@ -30,7 +30,7 @@
 
     &__news {
         background-color: clr(tertiary);
-        color: clr(tertiary, high-dark);
+        color: darken($tertiary-color, 40%);
         font-weight: 500;
         font-size: 0.9rem;
         display: inline;

@@ -1,7 +1,7 @@
 /* RESTAURANT */
 
 .restaurant {
-    background-color: clr(light, low-light);
+    background-color: $light;
     padding: 1.5em 1.5em 3.5em;
 
     &__container {

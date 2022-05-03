@@ -1,6 +1,6 @@
 .localization {
     width: 100%;
-    background-color: clr(light);
+    background-color: lighten($dark, 70%);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -15,7 +15,7 @@
         &__input {
         text-align: center;
         border: none;
-        background-color: clr(light);
+        background-color: lighten($dark, 70%);
         font-weight: 500;
         margin: 0%;
         }

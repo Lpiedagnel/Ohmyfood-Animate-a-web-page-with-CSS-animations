@@ -14,7 +14,7 @@
         align-items: center;
         background-color: clr(primary);
         padding: 13px;
-        color: clr(light);
+        color: $light;
         height: 15px;
         width: 15px;
         font-size: 0.8em;
@@ -27,15 +27,15 @@
         display: flex;
         align-items: center;
         width: 100%;
-        background-color: clr(light, low-light);
+        background-color: $light;
         border: none;
         border-radius: 1em;
         padding: 0.5rem;
-        box-shadow: 2px 1px 12px clr(light, low-dark);
+        box-shadow: 5px 10px 10px lighten($dark, 70% );
     }
 
     &__icon {
-        color: clr(light, high-dark);
+        color: lighten($dark, 30% );;
         font-size: 1.2em;
         margin: 0 1.2em;
     }

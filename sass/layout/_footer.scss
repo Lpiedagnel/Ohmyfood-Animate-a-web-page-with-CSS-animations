@@ -1,7 +1,7 @@
 /* FOOTER */
 
 .footer {
-    background-color: clr(dark);
+    background-color: $dark;
     padding: $little-padding;
 }
 
@@ -26,6 +26,6 @@
 }
 
 .footer__link {
-    color: clr(light, light);
+    color: $light;
     text-decoration: none;
 }

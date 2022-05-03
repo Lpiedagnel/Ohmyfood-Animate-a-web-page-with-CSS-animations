@@ -453,21 +453,25 @@ header {
   background: linear-gradient(#ff93e1, #a16be0);
 }
 
-.search-form {
+.localization {
   width: 100%;
   background-color: #EAEAEA;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  gap: 1.2em;
 }
-.search-form__input {
-  width: 100%;
+.localization__icon {
+  margin-bottom: 0.25rem;
+}
+.localization__input {
   text-align: center;
   border: none;
   background-color: #EAEAEA;
-  padding: 1em 0;
   font-weight: 500;
-}
-.search-form__input::placeholder {
-  opacity: 1;
-  color: #353535;
+  margin: 0%;
 }
 
 /* OPERATING STEP */

@@ -1,0 +1,22 @@
+.localization {
+    width: 100%;
+    background-color: clr(light);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    gap: 1.2em;
+
+        &__icon {
+            margin-bottom: 0.25rem;
+        }
+
+        &__input {
+        text-align: center;
+        border: none;
+        background-color: clr(light);
+        font-weight: 500;
+        margin: 0%;
+        }
+}

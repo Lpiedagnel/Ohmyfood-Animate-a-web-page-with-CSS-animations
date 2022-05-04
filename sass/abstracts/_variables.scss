@@ -36,3 +36,10 @@ $regular-font: 'Roboto', sans-serif;
 
 $little-padding: 1.5em 1.5em 0.5em;
 $medium-padding: 2.5em 3em 2.5em;
+
+/* Breakpoints */
+
+$breakpoints: (
+    tablet: 599px,
+    desktop: 992px
+);

@@ -14,4 +14,35 @@
         width: 2.5rem;
         margin: 5px 0;
     }
+
+    &__card {
+        background-color: lighten($light, 20%);
+        padding: 1em;
+        border-radius: 1em;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 3px 3px 10px lighten($dark, 64%);
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        margin: 0;
+    }
+
+    &__name {
+        margin: 0;
+    }
+
+    &__subtitle {
+        margin: 0;
+        font-weight: 300;
+    }
+
+    &__price {
+        align-self: end;
+        font-weight: 600;
+    }
+
 }

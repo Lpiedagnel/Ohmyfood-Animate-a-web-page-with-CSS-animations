@@ -434,9 +434,14 @@ header {
   padding: 1.5em 1.5em 3.5em;
 }
 .restaurant__container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 1rem;
+}
+@media (min-width: 900px) {
+  .restaurant__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
 }
 
 .btn {
@@ -532,6 +537,11 @@ header {
   width: 100%;
   border-radius: 1em;
   box-shadow: 3px 3px 10px #d8d8d8;
+}
+@media (min-width: 900px) {
+  .restaurant__card {
+    width: 90%;
+  }
 }
 .restaurant__link {
   color: #353535;

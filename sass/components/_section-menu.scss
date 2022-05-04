@@ -15,6 +15,13 @@
         margin: 5px 0;
     }
 
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.8em;
+        margin: 1em auto;
+    }
+
     &__card {
         background-color: lighten($light, 20%);
         padding: 1em;

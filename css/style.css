@@ -597,10 +597,32 @@ header {
 }
 
 /* MENU */
+.menu {
+  background-color: #F6F6F6;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  position: relative;
+  margin-top: -3rem;
+}
 .menu__background {
   width: 100%;
   object-fit: cover;
   height: 17rem;
+}
+.menu__title-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5em 1.5em 0.5em;
+}
+.menu__title {
+  font-family: "Shrikhand", cursive;
+  font-weight: 200;
+  font-size: 1.4em;
+}
+.menu__heart {
+  font-size: 1.5em;
 }
 
 /*# sourceMappingURL=style.css.map */

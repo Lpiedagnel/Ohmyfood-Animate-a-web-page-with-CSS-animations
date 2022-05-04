@@ -1,7 +1,33 @@
 /* MENU */
 
-.menu__background {
+.menu {
+    background-color: $light;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    position: relative;
+    margin-top: -3rem;
+
+    &__background {
     width: 100%;
     object-fit: cover;
     height: 17rem;
+    }
+
+    &__title-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: $little-padding;
+    }
+
+    &__title {
+        font-family: $title-font;
+        font-weight: 200;
+        font-size: 1.4em;
+    }
+
+    &__heart {
+        font-size: 1.5em;
+    }
 }

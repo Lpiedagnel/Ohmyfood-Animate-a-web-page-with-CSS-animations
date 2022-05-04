@@ -596,4 +596,11 @@ header {
   font-size: 1.5em;
 }
 
+/* MENU */
+.menu__background {
+  width: 100%;
+  object-fit: cover;
+  height: 17rem;
+}
+
 /*# sourceMappingURL=style.css.map */

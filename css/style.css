@@ -596,6 +596,22 @@ header {
   font-size: 1.5em;
 }
 
+.menu-section {
+  padding: 1.5em 1.5em 0.5em;
+}
+.menu-section__title {
+  font-weight: 400;
+  font-size: 1em;
+  margin: 0;
+}
+.menu-section__line {
+  background-color: #99E2D0;
+  height: 4px;
+  border: none;
+  width: 2.5rem;
+  margin: 5px 0;
+}
+
 /* MENU */
 .menu {
   background-color: #F6F6F6;
@@ -603,6 +619,7 @@ header {
   border-top-right-radius: 3rem;
   position: relative;
   margin-top: -3rem;
+  display: grid;
 }
 .menu__background {
   width: 100%;

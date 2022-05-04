@@ -1,0 +1,17 @@
+.menu-section {
+    padding: $little-padding;
+
+    &__title {
+        font-weight: 400;
+        font-size: 1em;
+        margin: 0;
+    }
+
+    &__line {
+        background-color: $tertiary-color;
+        height: 4px;
+        border: none;
+        width: 2.5rem;
+        margin: 5px 0;
+    }
+}

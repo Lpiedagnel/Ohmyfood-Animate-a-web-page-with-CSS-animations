@@ -382,7 +382,7 @@ body {
   height: 1.8rem;
 }
 .header__return {
-  position: fixed;
+  position: absolute;
   color: #353535;
   top: 1.5rem;
   font-size: 1.4rem;
@@ -670,7 +670,7 @@ body {
 .menu-section__name {
   margin: 0;
 }
-.menu-section__subtitle {
+.menu-section__ingredient {
   margin: 0;
   font-weight: 300;
 }

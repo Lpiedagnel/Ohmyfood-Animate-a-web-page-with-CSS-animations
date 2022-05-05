@@ -6,10 +6,6 @@
         width: 100%;
         border-radius: 1em;        
         box-shadow: 3px 3px 10px lighten($dark, 64%);
-
-        @include for-desktop {
-            width: 90%;
-        }
     }
 
     &__link {

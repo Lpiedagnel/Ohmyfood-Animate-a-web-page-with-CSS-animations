@@ -5,6 +5,10 @@
     padding: $little-padding;
 }
 
+.footer__container {
+    @include max-width;
+}
+
 .footer__logo {
     filter: invert(100%);
     width: 7em;

@@ -20,6 +20,11 @@
         grid-template-columns: 1fr;
         gap: 0.8em;
         margin: 1em auto;
+
+        @include for-desktop {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 3rem;
+        }
     }
 
     &__card {

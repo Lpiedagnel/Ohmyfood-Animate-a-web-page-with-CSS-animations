@@ -666,7 +666,11 @@ header {
   border-top-right-radius: 3rem;
   position: relative;
   margin-top: -3rem;
+}
+.menu__container {
   display: grid;
+  max-width: 1200px;
+  margin: auto;
 }
 .menu__background {
   width: 100%;

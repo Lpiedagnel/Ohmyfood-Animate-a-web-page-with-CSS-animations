@@ -20,6 +20,7 @@
         grid-template-columns: 1fr;
         gap: 0.8em;
         margin: 1em auto;
+        @include animation-delay-fade-in;
 
         @include for-desktop {
             grid-template-columns: 1fr 1fr 1fr;
@@ -34,6 +35,8 @@
         display: flex;
         justify-content: space-between;
         box-shadow: 3px 3px 10px lighten($dark, 64%);
+        opacity: 0%;
+        animation: fade-in 1s ease forwards;
     }
 
     &__text {

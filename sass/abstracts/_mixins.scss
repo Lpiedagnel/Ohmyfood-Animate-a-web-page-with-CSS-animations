@@ -18,3 +18,14 @@
     max-width: 1200px;
     margin: auto;
   }
+
+
+/* Delay fade-in for each card */
+
+@mixin animation-delay-fade-in {
+  @for $i from 1 through 10 {
+    .menu-section__card:nth-child(#{$i}) {
+        animation-delay: #{$i * 0.2}s;
+    }
+  }
+}

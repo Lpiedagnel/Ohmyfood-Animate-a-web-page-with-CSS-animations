@@ -372,6 +372,14 @@ body {
     transform: translateY(0);
   }
 }
+@keyframes card-animation-background {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 25%;
+  }
+}
 /* HEADER  */
 .header {
   display: flex;
@@ -659,34 +667,34 @@ body {
   gap: 0.8em;
   margin: 1em auto;
 }
-.menu-section__container .menu-section__card:nth-child(1n) {
+.menu-section__container .menu-section__card:nth-child(1) {
   animation-delay: 0.2s;
 }
-.menu-section__container .menu-section__card:nth-child(2n) {
+.menu-section__container .menu-section__card:nth-child(2) {
   animation-delay: 0.4s;
 }
-.menu-section__container .menu-section__card:nth-child(3n) {
+.menu-section__container .menu-section__card:nth-child(3) {
   animation-delay: 0.6s;
 }
-.menu-section__container .menu-section__card:nth-child(4n) {
+.menu-section__container .menu-section__card:nth-child(4) {
   animation-delay: 0.8s;
 }
-.menu-section__container .menu-section__card:nth-child(5n) {
+.menu-section__container .menu-section__card:nth-child(5) {
   animation-delay: 1s;
 }
-.menu-section__container .menu-section__card:nth-child(6n) {
+.menu-section__container .menu-section__card:nth-child(6) {
   animation-delay: 1.2s;
 }
-.menu-section__container .menu-section__card:nth-child(7n) {
+.menu-section__container .menu-section__card:nth-child(7) {
   animation-delay: 1.4s;
 }
-.menu-section__container .menu-section__card:nth-child(8n) {
+.menu-section__container .menu-section__card:nth-child(8) {
   animation-delay: 1.6s;
 }
-.menu-section__container .menu-section__card:nth-child(9n) {
+.menu-section__container .menu-section__card:nth-child(9) {
   animation-delay: 1.8s;
 }
-.menu-section__container .menu-section__card:nth-child(10n) {
+.menu-section__container .menu-section__card:nth-child(10) {
   animation-delay: 2s;
 }
 @media (min-width: 900px) {
@@ -697,19 +705,35 @@ body {
 }
 .menu-section__card {
   background-color: white;
-  padding: 1em;
-  border-radius: 1em;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  border-radius: 1em;
   box-shadow: 3px 3px 10px #d8d8d8;
+  overflow: hidden;
   opacity: 0%;
   animation: fade-in 1s ease forwards;
+  max-height: 80px;
+}
+.menu-section__card:hover {
+  cursor: pointer;
+}
+.menu-section__card:hover .menu-section__animation {
+  animation: card-animation-background 0.5s both;
+}
+.menu-section__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  width: 100%;
 }
 .menu-section__text {
   display: flex;
   flex-direction: column;
   gap: 7px;
   margin: 0;
+  overflow: hidden;
+  white-space: hidden;
+  text-overflow: ellipsis;
 }
 .menu-section__name {
   margin: 0;
@@ -721,6 +745,11 @@ body {
 .menu-section__price {
   align-self: end;
   font-weight: 600;
+}
+.menu-section__animation {
+  width: 0%;
+  height: 100%;
+  background-color: #99E2D0;
 }
 
 /* MENU */

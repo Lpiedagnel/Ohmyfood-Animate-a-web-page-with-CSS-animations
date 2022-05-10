@@ -362,7 +362,7 @@ body {
 }
 
 /* ANIMATIONS */
-@keyframes fade-in {
+@keyframes menu-card-cascade {
   0% {
     opacity: 0%;
     transform: translateY(20px);
@@ -643,6 +643,7 @@ body {
   font-weight: 300;
 }
 .restaurant__like {
+  display: inline-block;
   font-size: 1.5em;
 }
 
@@ -711,7 +712,7 @@ body {
   box-shadow: 3px 3px 10px #d8d8d8;
   overflow: hidden;
   opacity: 0%;
-  animation: fade-in 1s ease forwards;
+  animation: menu-card-cascade 1s ease forwards;
   max-height: 80px;
 }
 .menu-section__card:hover {

@@ -20,7 +20,7 @@
         grid-template-columns: 1fr;
         gap: 0.8em;
         margin: 1em auto;
-        @include animation-delay-fade-in;
+        @include animation-delay-cascade;
 
         @include for-desktop {
             grid-template-columns: 1fr 1fr 1fr;
@@ -36,7 +36,7 @@
         box-shadow: 3px 3px 10px lighten($dark, 64%);
         overflow: hidden;
         opacity: 0%;
-        animation: fade-in 1s ease forwards;
+        animation: menu-card-cascade 1s ease forwards;
         max-height: 80px;
 
         &:hover {

@@ -363,29 +363,45 @@ body {
 
 /* ANIMATIONS */
 @keyframes menu-card-cascade {
-  0% {
+  from {
     opacity: 0%;
     transform: translateY(20px);
   }
-  100% {
+  to {
     opacity: 100%;
     transform: translateY(0);
   }
 }
-@keyframes menu-card-background {
-  0% {
+@keyframes menu-card-background-in {
+  from {
     width: 0%;
   }
-  100% {
+  to {
     width: 25%;
   }
 }
-@keyframes menu-card-icon {
-  0% {
+@keyframes menu-card-background-out {
+  from {
+    width: 25%;
+  }
+  to {
+    width: 0%;
+  }
+}
+@keyframes menu-card-icon-in {
+  from {
     transform: rotate(180deg);
   }
-  100% {
+  to {
     transform: rotate(0deg);
+  }
+}
+@keyframes menu-card-icon-out {
+  from {
+    visibility: visible;
+  }
+  to {
+    visibility: hidden;
   }
 }
 /* HEADER  */
@@ -727,10 +743,13 @@ body {
   cursor: pointer;
 }
 .menu-section__card:hover .menu-section__animation {
-  animation: menu-card-background both 0.5s;
+  animation: menu-card-background-in both 0.5s;
+}
+.menu-section__card:hover .menu-section__circle {
+  visibility: visible;
 }
 .menu-section__card:hover .menu-section__icon {
-  animation: menu-card-icon both 0.5s;
+  animation: menu-card-icon-in both 0.5s;
   visibility: visible;
 }
 .menu-section__content {
@@ -744,6 +763,9 @@ body {
   flex-direction: column;
   gap: 7px;
   margin: 0;
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-section__name {
   margin: 0;
@@ -757,6 +779,7 @@ body {
   font-weight: 600;
 }
 .menu-section__animation {
+  animation: menu-card-background-out 0.5s;
   width: 0%;
   height: 100%;
   background-color: #99E2D0;
@@ -773,10 +796,12 @@ body {
   padding: 12px;
   border-radius: 50%;
   background-color: white;
+  animation: menu-card-icon-out 0.5s;
 }
 .menu-section__icon {
-  color: #99E2D0;
   visibility: hidden;
+  color: #99E2D0;
+  animation: menu-card-icon-out 0.5s;
 }
 
 /* MENU */

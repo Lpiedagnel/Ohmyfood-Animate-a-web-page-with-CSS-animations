@@ -36,17 +36,22 @@
         box-shadow: 3px 3px 10px lighten($dark, 64%);
         overflow: hidden;
         opacity: 0%;
+        
         animation: menu-card-cascade 1s ease forwards;
         height: 80px;
 
         &:hover {
             cursor: pointer;
             .menu-section__animation {
-                animation: menu-card-background both 0.5s;
+                animation: menu-card-background-in both 0.5s;
+            }
+
+            .menu-section__circle {
+                visibility: visible;
             }
 
             .menu-section__icon {
-                animation: menu-card-icon both 0.5s;
+                animation: menu-card-icon-in both 0.5s;
                 visibility: visible;
             }
         }
@@ -64,6 +69,9 @@
         flex-direction: column;
         gap: 7px;
         margin: 0;
+        white-space: wrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     &__name {
@@ -81,6 +89,7 @@
     }
 
     &__animation {
+        animation: menu-card-background-out 0.5s;
         width: 0%;
         height: 100%;
         background-color: $tertiary-color;
@@ -98,10 +107,12 @@
         padding: 12px;
         border-radius: 50%;
         background-color: lighten($light, 100%);
+        animation: menu-card-icon-out 0.5s;
     }
 
     &__icon {
-        color: $tertiary-color;
         visibility: hidden;
+        color: $tertiary-color;
+        animation: menu-card-icon-out 0.5s;
     }
 }

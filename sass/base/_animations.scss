@@ -1,16 +1,26 @@
 /* ANIMATIONS */
 
 @keyframes menu-card-cascade {
-    0% {opacity: 0%; transform: translateY(20px);}
-    100% {opacity: 100%; transform: translateY(0);}
+    from {opacity: 0%; transform: translateY(20px);}
+    to {opacity: 100%; transform: translateY(0);}
 }
 
-@keyframes menu-card-background {
-    0% {width: 0%;}
-    100% {width: 25%;}
+@keyframes menu-card-background-in {
+    from {width: 0%;}
+    to {width: 25%;}
 }
 
-@keyframes menu-card-icon {
-    0% {transform: rotate(180deg);}
-    100% {transform: rotate(0deg);}
+@keyframes menu-card-background-out {
+    from {width: 25%;}
+    to {width: 0%;}
+}
+
+@keyframes menu-card-icon-in {
+    from {transform: rotate(180deg);}
+    to {transform: rotate(0deg);}
+}
+
+@keyframes menu-card-icon-out {
+    from {visibility: visible;}
+    to {visibility: hidden;}
 }

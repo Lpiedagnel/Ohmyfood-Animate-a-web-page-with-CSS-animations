@@ -65,8 +65,30 @@
         font-weight: 300;
     }
 
+    &__like-container {
+        display: flex;
+
+        &:hover {
+            .restaurant__like {
+                animation: restaurant-like-out 0.2s both;
+            }
+            .restaurant__like--animation {
+                animation: restaurant-like-in 0.2s both;
+            }
+        }
+    }
+
     &__like {
-        display: inline-block;
         font-size: 1.5em;
+        opacity: 1;
+        position: relative;
+
+        &--animation {
+            color: $primary-color;
+            position: absolute;
+            z-index: 1;
+            opacity: 0;
+            animation: restaurant-like-out 0.2s both;
+        }
     }
 }

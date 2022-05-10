@@ -5,7 +5,12 @@
     100% {opacity: 100%; transform: translateY(0);}
 }
 
-@keyframes card-animation-background {
+@keyframes menu-card-background {
     0% {width: 0%;}
     100% {width: 25%;}
+}
+
+@keyframes menu-card-icon {
+    0% {transform: rotate(180deg);}
+    100% {transform: rotate(0deg);}
 }

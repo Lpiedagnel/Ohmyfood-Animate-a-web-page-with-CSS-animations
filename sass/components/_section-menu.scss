@@ -37,12 +37,17 @@
         overflow: hidden;
         opacity: 0%;
         animation: menu-card-cascade 1s ease forwards;
-        max-height: 80px;
+        height: 80px;
 
         &:hover {
             cursor: pointer;
             .menu-section__animation {
-                animation: card-animation-background 0.5s both;
+                animation: menu-card-background both 0.5s;
+            }
+
+            .menu-section__icon {
+                animation: menu-card-icon both 0.5s;
+                visibility: visible;
             }
         }
     }
@@ -59,9 +64,6 @@
         flex-direction: column;
         gap: 7px;
         margin: 0;
-        overflow: hidden;
-        white-space: hidden;
-        text-overflow: ellipsis;
     }
 
     &__name {
@@ -100,5 +102,6 @@
 
     &__icon {
         color: $tertiary-color;
+        visibility: hidden;
     }
 }

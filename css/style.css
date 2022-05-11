@@ -531,6 +531,10 @@ body {
   color: #F6F6F6;
   text-decoration: none;
 }
+.footer__link:hover {
+  color: #9356DC;
+  transition: 0.2s;
+}
 
 /* OPERATING SECTION */
 .operating {
@@ -614,7 +618,7 @@ body {
 }
 
 .btn {
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
   color: #F6F6F6;
   font-weight: 500;
   border: none;
@@ -626,7 +630,7 @@ body {
 }
 .btn:hover {
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 0.7;
   box-shadow: 3px 3px 10px #353535;
 }
 
@@ -706,6 +710,13 @@ body {
   width: 100%;
   border-radius: 1em;
   box-shadow: 3px 3px 10px #d8d8d8;
+}
+.restaurant__card:hover {
+  transition: 0.5s;
+  box-shadow: 3px 3px 15px #a8a8a8;
+}
+.restaurant__card:hover .restaurant__text {
+  color: #9356DC;
 }
 .restaurant__link {
   color: #353535;

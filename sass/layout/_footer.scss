@@ -32,4 +32,9 @@
 .footer__link {
     color: $light;
     text-decoration: none;
+
+    &:hover {
+        color: $primary-color;
+        transition: 0.2s;
+    }
 }

@@ -36,7 +36,6 @@
         box-shadow: 3px 3px 10px lighten($dark, 64%);
         overflow: hidden;
         opacity: 0%;
-        
         animation: menu-card-cascade 1s ease forwards;
         height: 80px;
 
@@ -62,6 +61,7 @@
         justify-content: space-between;
         padding: 1em;
         width: 100%;
+        @include ellipsis;
     }
 
     &__text {
@@ -69,18 +69,18 @@
         flex-direction: column;
         gap: 7px;
         margin: 0;
-        white-space: wrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        @include ellipsis;
     }
 
     &__name {
         margin: 0;
+        @include ellipsis;
     }
 
     &__ingredient {
         margin: 0;
         font-weight: 300;
+        @include ellipsis;
     }
 
     &__price {

@@ -5,6 +5,7 @@
 /* Access Color */
 /* Responsive Mixins */
 /* Max Container for Layout */
+/* Text Ellipsis */
 /* Delay fade-in for each card */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -863,22 +864,31 @@ body {
   justify-content: space-between;
   padding: 1em;
   width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-section__text {
   display: flex;
   flex-direction: column;
   gap: 7px;
   margin: 0;
-  white-space: wrap;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .menu-section__name {
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-section__ingredient {
   margin: 0;
   font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu-section__price {
   align-self: end;

@@ -472,6 +472,10 @@ body {
   top: 1.5rem;
   font-size: 1.4rem;
 }
+.header__return:hover {
+  color: #9356DC;
+  transition: 0.2s;
+}
 
 .cta {
   display: flex;

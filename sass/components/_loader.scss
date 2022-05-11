@@ -1,0 +1,9 @@
+.loader {
+    background-color: $tertiary-color;
+    width: 100%;
+    min-height: 100%;
+    position: fixed;
+    z-index: 10;
+    opacity: 0;
+    animation: loading-animation 3s ease-out 1;
+}

@@ -542,11 +542,21 @@ body {
 
 /* OPERATING SECTION */
 .operating {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   padding: 1.5em 1.5em 0.5em;
   max-width: 1200px;
   margin: auto;
+}
+@media (min-width: 900px) {
+  .operating {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    align-content: start;
+  }
+}
+.operating__title {
+  grid-row: 1;
 }
 
 /* RESTAURANT */
@@ -665,6 +675,13 @@ body {
   flex-direction: row;
   align-items: center;
   margin: 1em 0;
+}
+@media (min-width: 900px) {
+  .operating__step {
+    grid-row: 2;
+    margin: 1em 10% 1em 0;
+    justify-content: start;
+  }
 }
 .operating__number {
   display: flex;

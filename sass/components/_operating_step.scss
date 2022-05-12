@@ -6,6 +6,11 @@
         flex-direction: row;
         align-items: center;
         margin: 1em 0;
+        @include for-desktop {
+            grid-row: 2;
+            margin: 1em 10% 1em 0;
+            justify-content: start;
+        }
     }
 
     &__number {

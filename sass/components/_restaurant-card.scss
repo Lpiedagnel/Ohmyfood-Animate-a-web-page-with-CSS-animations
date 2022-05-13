@@ -9,9 +9,10 @@
 
         &:hover {
             transition: 0.5s;
-            box-shadow: 3px 3px 15px lighten($dark, 45%);
+            box-shadow: 3px 3px 12px lighten($dark, 60%);
 
             .restaurant__text {
+                transition: 0.5s;
                 color: $primary-color;
             }
         }

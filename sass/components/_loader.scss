@@ -41,13 +41,8 @@
         }
     }
 
-    &__text {
-        color: $light;
-        font-size: 2em;
-        font-weight: 900;
-    }
-
     &__logo {
         filter: invert(100%);
+        margin: 2rem;
     }
 }

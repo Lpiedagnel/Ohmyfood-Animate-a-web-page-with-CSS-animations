@@ -36,7 +36,7 @@
         box-shadow: 3px 3px 10px lighten($dark, 64%);
         overflow: hidden;
         opacity: 0%;
-        animation: menu-card-cascade 1s ease forwards;
+        animation: menu-card-cascade 0.6s ease forwards;
         height: 80px;
 
         &:hover {

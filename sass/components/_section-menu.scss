@@ -43,6 +43,7 @@
             cursor: pointer;
             .menu-section__animation {
                 width: 25%;
+                left: 0;
                 transition: 0.5s;
             }
 
@@ -92,6 +93,8 @@
         justify-content: center;
         align-items: center;
         transition: 0.5s;
+        position: relative;
+        left: 5%;
     }
 
     &__circle {

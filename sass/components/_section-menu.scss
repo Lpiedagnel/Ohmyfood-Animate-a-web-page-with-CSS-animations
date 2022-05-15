@@ -42,16 +42,12 @@
         &:hover {
             cursor: pointer;
             .menu-section__animation {
-                animation: menu-card-background-in both 0.5s;
-            }
-
-            .menu-section__circle {
-                visibility: visible;
+                width: 25%;
+                transition: 0.5s;
             }
 
             .menu-section__icon {
                 animation: menu-card-icon-in both 0.5s;
-                visibility: visible;
             }
         }
     }
@@ -89,13 +85,13 @@
     }
 
     &__animation {
-        animation: menu-card-background-out 0.5s;
         width: 0%;
         height: 100%;
         background-color: $tertiary-color;
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: 0.5s;
     }
 
     &__circle {
@@ -107,12 +103,9 @@
         padding: 12px;
         border-radius: 50%;
         background-color: lighten($light, 100%);
-        animation: menu-card-icon-out 0.5s;
     }
 
     &__icon {
-        visibility: hidden;
         color: $tertiary-color;
-        animation: menu-card-icon-out 0.5s;
     }
 }

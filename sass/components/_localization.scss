@@ -13,10 +13,9 @@
         }
 
         &__input {
-        text-align: center;
-        border: none;
-        background-color: lighten($dark, 70%);
-        font-weight: 500;
-        margin: 0%;
+            text-align: center;
+            border: none;
+            background-color: lighten($dark, 70%);
+            font-weight: 500;
         }
 }

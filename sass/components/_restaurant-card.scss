@@ -39,7 +39,7 @@
     }
 
     &__news {
-        background-color: clr(tertiary);
+        background-color: $tertiary-color;
         color: darken($tertiary-color, 40%);
         font-weight: 500;
         font-size: 0.9rem;

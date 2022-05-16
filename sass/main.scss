@@ -2,8 +2,7 @@
 @import 
     'abstracts/variables',
     'abstracts/functions',
-    'abstracts/mixins',
-    'abstracts/placeholders';
+    'abstracts/mixins';
 
 // 2. Vendors
 @import 
@@ -20,7 +19,6 @@
     'layout/header',
     'layout/cta',
     'layout/footer',
-    'layout/flexbox',
     'layout/operating',
     'layout/restaurant';
 
@@ -28,7 +26,6 @@
 @import 
     'components/loader',
     'components/buttons',
-    'components/media',
     'components/localization',
     'components/operating_step',
     'components/restaurant-card',
@@ -36,5 +33,4 @@
 
 // 6. Page-specific styles
 @import 
-    'pages/home',
     'pages/menu';

@@ -1,8 +1,16 @@
-/* OPERATING SECTION */
-
 .operating {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     padding: $little-padding;
     @include max-width;
+
+    @include for-desktop {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 2fr;
+        align-content: start;
+    }
+
+    &__title {
+        grid-row: 1;
+    }
 }

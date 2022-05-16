@@ -6,6 +6,16 @@
         width: 100%;
         border-radius: 1em;        
         box-shadow: 3px 3px 10px lighten($dark, 64%);
+
+        &:hover {
+            transition: 0.5s;
+            box-shadow: 3px 3px 12px lighten($dark, 60%);
+
+            .restaurant__text {
+                transition: 0.5s;
+                color: $primary-color;
+            }
+        }
     }
 
     &__link {
@@ -29,7 +39,7 @@
     }
 
     &__news {
-        background-color: clr(tertiary);
+        background-color: $tertiary-color;
         color: darken($tertiary-color, 40%);
         font-weight: 500;
         font-size: 0.9rem;
@@ -65,7 +75,30 @@
         font-weight: 300;
     }
 
+    &__like-container {
+        display: flex;
+
+        &:hover {
+            .restaurant__like {
+                animation: restaurant-like-out 0.2s both;
+            }
+            .restaurant__like--animation {
+                animation: restaurant-like-in 0.2s both;
+            }
+        }
+    }
+
     &__like {
         font-size: 1.5em;
+        opacity: 1;
+        position: relative;
+
+        &--animation {
+            color: $primary-color;
+            position: absolute;
+            z-index: 1;
+            opacity: 0;
+            animation: restaurant-like-out 0.2s both;
+        }
     }
 }

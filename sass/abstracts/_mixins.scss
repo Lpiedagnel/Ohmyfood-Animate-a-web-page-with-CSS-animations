@@ -1,3 +1,5 @@
+/* GENERAL */
+
 /* Responsive Mixins */
 
   @mixin for-tablet {
@@ -18,3 +20,25 @@
     max-width: 1200px;
     margin: auto;
   }
+
+
+/* MENU CARD */
+
+/* Text Ellipsis */
+
+@mixin ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* Delay fade-in for each card */
+
+@mixin animation-delay-cascade {
+  @for $i from 1 through 10 {
+    .menu-section__card:nth-child(#{$i}) {
+        animation-delay: #{$i * 0.2}s;
+    }
+  }
+}

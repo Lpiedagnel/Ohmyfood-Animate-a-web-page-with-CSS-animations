@@ -20,6 +20,7 @@
         grid-template-columns: 1fr;
         gap: 0.8em;
         margin: 1em auto;
+        @include animation-delay-cascade;
 
         @include for-desktop {
             grid-template-columns: 1fr 1fr 1fr;
@@ -29,11 +30,35 @@
 
     &__card {
         background-color: lighten($light, 20%);
-        padding: 1em;
+        display: flex;
+        flex-direction: row;
         border-radius: 1em;
+        box-shadow: 3px 3px 10px lighten($dark, 64%);
+        overflow: hidden;
+        opacity: 0%;
+        animation: menu-card-cascade 0.6s ease forwards;
+        height: 80px;
+
+        &:hover {
+            cursor: pointer;
+            .menu-section__animation {
+                width: 25%;
+                left: 0;
+                transition: 0.5s;
+            }
+
+            .menu-section__icon {
+                animation: menu-card-icon-in both 0.5s;
+            }
+        }
+    }
+
+    &__content {
         display: flex;
         justify-content: space-between;
-        box-shadow: 3px 3px 10px lighten($dark, 64%);
+        padding: 1em;
+        width: 100%;
+        @include ellipsis;
     }
 
     &__text {
@@ -41,19 +66,49 @@
         flex-direction: column;
         gap: 7px;
         margin: 0;
+        @include ellipsis;
     }
 
     &__name {
         margin: 0;
+        @include ellipsis;
     }
 
     &__ingredient {
         margin: 0;
         font-weight: 300;
+        @include ellipsis;
     }
 
     &__price {
         align-self: end;
         font-weight: 600;
+    }
+
+    &__animation {
+        width: 0%;
+        height: 100%;
+        background-color: $tertiary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+        position: relative;
+        left: 5%;
+    }
+
+    &__circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 12px;
+        height: 12px;
+        padding: 12px;
+        border-radius: 50%;
+        background-color: lighten($light, 100%);
+    }
+
+    &__icon {
+        color: $tertiary-color;
     }
 }

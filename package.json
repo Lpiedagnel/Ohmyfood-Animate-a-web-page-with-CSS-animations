@@ -4,7 +4,7 @@
   "description": "This is a student project for OpenClassrooms. The goal is to use CSS animations to match (as close as possible) the mockup we are given.",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:css/style.css"
+    "sass": "sass --watch ./sass/main.scss:css/style.css --style compressed"
   },
   "repository": {
     "type": "git",

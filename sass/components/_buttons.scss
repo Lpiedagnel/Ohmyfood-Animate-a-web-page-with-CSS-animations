@@ -8,6 +8,7 @@
     padding: 1em;
     box-shadow: 3px 3px 10px lighten($dark, 50%);
     transition: 400ms;
+    text-decoration: none;
 
     &:hover {
         cursor: pointer;

@@ -637,6 +637,7 @@ body {
   padding: 1em;
   box-shadow: 3px 3px 10px #b5b5b5;
   transition: 400ms;
+  text-decoration: none;
 }
 .btn:hover {
   cursor: pointer;

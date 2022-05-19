@@ -1,12 +1,13 @@
 .operating {
     display: grid;
     grid-template-columns: 1fr;
-    padding: $little-padding;
+    padding: 1.5em 1.5em 3.5em;
     @include max-width;
 
     @include for-desktop {
+        padding: 2.5em 1.5em 3.5em;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 2fr;
+        grid-template-rows: 4rem 2fr;
         align-content: start;
     }
 
